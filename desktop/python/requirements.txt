@@ -1,0 +1,15 @@
+# 完美像素 Sidecar 依赖（M1）
+numpy>=1.20.0
+opencv-python>=4.5.0
+pillow>=10.0.0
+fastapi>=0.110.0
+uvicorn>=0.29.0
+
+# 开发态热重载（--reload）所需：watchfiles 提供高效文件监听，
+# 缺失时 uvicorn 回退为轮询式 StatReload（仍可用，但效率较低）。
+watchfiles>=0.21.0
+
+# AI 生图（豆包 / 即梦）浏览器自动化依赖。
+# 注意：代码用 channel="chrome" 驱动本机 Google Chrome，需自行安装 Chrome；
+# 无需执行 `playwright install`（不下载 chromium）。
+playwright>=1.40.0
